@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+@import url("../menu.css");
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.screen{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #938cd2;
+}
+.operation{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    font-size: 50px;
+}
+.number{
+    height: 100px;
+    width: 200px;
+    font-size: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #fff2ce;
+    border: solid 3px black;
+}
+.button{
+    height: 40px;
+    width: 40px;
+}
+.submit{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 100px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #fff2ce;
+    border: solid 3px black;
+    font-size: 30px;
+}
+.answer{
+    font-size: 60px;
+    height: 80px;
+    width: auto;
+    background-color: #fff2ce;
+    border: solid 3px black;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px 0 0 10px;
+}
+        </style>
+    </head>
+    <body>
+<!--#menu-->
+        <div class="screen">
+            <div class="container">
+                <form action="http://goreliic.beget.tech/calc/calc.py" method="get">
+                    <div class="answer"><!--answer--></div>
+                    <div class="numbers">
+                        <input class="number" type = "text" name = "a"/>
+                        <input class="number" type = "text" name = "b"/>
+                    </div>
+                    <div class="operation">
+                        <input class = "button" type="radio" name="op" value="sum"/>sum
+                        <input class = "button" type="radio" name="op" value="sub"/>sub
+                        <input class = "button" type="radio" name="op" value="mul"/>mul
+                        <input class = "button" type="radio" name="op" value="div"/>div
+                    </div>
+                    <input class="submit" type="submit" value="answer" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+@import url("../menu.css");
+body, html{
+    height: 100%;
+    width: 100%;
+    margin:0;
+    padding: 0;
+    font-size: 20px;
+    background-color: #5680e9;
+}
+form{
+    height: 50%;
+    text-align: center;
+}
+.button{
+    height: 50px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #8860d0;
+}
+textarea{
+    width: 98%;
+    height: 100%;
+    background-color: #84ceeb;
+    color: #2a1b3d;
+    font-size: 20px;
+}
+.res{
+    text-align: left;
+    margin-top: 70px;
+    width: 98%;
+    height: 35%;
+    border: solid 1px #2c3531;
+    overflow: scroll;
+    background-color: #c1c8e4;
+    margin-left: 15px;
+    color: #2a1b3d;
+}
+        </style>
+    </head>
+    <body>
+<!--#menu-->
+        <form action="http://127.0.0.1:8888/py-online/py-online.py" method="post">
+            <textarea name="code"></textarea>
+            <input class="button" type="submit" value="run" />
+        </form>
+        <div class="res"><!--#res--></div>
+    </body>
+</html>

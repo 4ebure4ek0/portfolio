@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+@import url("../menu.css");
+html, body
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #E0F0FF;
+}
+.container{
+    width: 100%;
+    font-size: 30px;
+    font-family: Alegreya;
+}
+.task
+{
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.question
+{
+    width: 700px;
+}
+.right_answer
+{
+    background-color: #BCF46E;
+}
+.wrong_answer
+{
+    background-color: #FF6840;
+}
+.img_block
+{
+    text-align: center;
+}
+img
+{
+    width: 40%;
+}
+input{
+    height: 25px;
+    width: 25px;
+}
+.submit{
+    height: 70px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #936CD6;
+    color: whitesmoke;
+    font-family: Alegreya;
+    font-size: 25px;
+}
+        </style>
+    </head>
+    <body>
+<!--#menu-->
+        <form action="http://127.0.0.1:8888/pdd/pdd.py" method="get">
+            <div class="container">
+    <!--tasks-->
+                <!--div class="task">
+                    <div class="img_block">
+                        <img src="./img/1.jpg" />
+                        <img src="./img/2.jpg" />
+                        <img src="./img/3.jpg" />
+                    </div>
+                <div class="question">Где начинают действовать требования Правил, относящиеся к населенным пунктам?</div>
+                    <div><input type="radio" name="answer0" value="1"/>Только с места установки дорожного знака «Начало населенного пункта» на белом фоне.<br /></div>
+                    <div><input type="radio" name="answer0" value="2"/>С места установки дорожного знака с названием населенного пункта на белом или синем фоне.<br /></div>
+                    <div class="wrong_answer"><input type="radio" name="answer0" value="3"/>В начале застроенной территории, непосредственно прилегающей к дороге.<br /></div>
+
+                </div-->
+                <input class="submit" type="submit" />
+            </div>
+        </form>
+    </body>
+</html>
+
+
+
+

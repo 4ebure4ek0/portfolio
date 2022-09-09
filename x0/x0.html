@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+@import url("../menu.css");
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.screen{
+    height: 100%;
+    background-color: #54668e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    height: 150px;
+    width: 150px;
+    font-size: 60px;
+    border-radius: 20px;
+    border: solid 3px #353956;
+    background-color: #e8e8e8;
+}
+.reset{
+    height: auto;
+    width: auto;
+    font-size: 30px;
+}
+.highlight{
+    background-color: green;
+}
+        </style>
+    </head>
+    <body>
+<!--#menu-->
+        <div class="screen">
+            <div class="container">
+                <form action="http://127.0.0.1:8888/x0/x0.py" method="post">
+<!--cells-->  
+                </form>
+                <form action="http://127.0.0.1:8888/x0/reset.py" method="post">
+                    <input type="submit" value="Clear" class="reset"/> 
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

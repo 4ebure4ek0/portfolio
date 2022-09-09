@@ -1,0 +1,37 @@
+.menu{
+    background-color: #24242e;
+    display: flex;
+    font-size: 32px;
+    font-family: serif;
+    color: #c0b39f;
+}
+.left_panel{
+    width: 30%;
+}
+.right_panel{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.menu_block{
+    padding: 5px;
+}
+.menu_block:hover{
+    background-color: #40314e;
+}
+a{
+    color: #c0b39f;
+    text-decoration: none;
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.submenu_button{
+    width: 200px;
+    color: #24242e;
+}
+.menu_block:hover > .submenu{
+    height: auto;
+}

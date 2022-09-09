@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <style>
+body, html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main_screen{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    font-size: 50px;
+}
+.main_screen__img{
+    width: 100%;
+    text-align: center;
+}
+.main_screen__text{
+    color: whitesmoke;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: Luminari, fantasy;
+}
+.description{
+    width: 100%;
+    font-size: 30px;
+    font-family: Andale Mono, monospace;
+    text-align: center;
+}
+p{
+    width: 80%;
+    margin: 10%;
+}
+.screen{
+    height: 200%;
+}
+.container{
+    height: 100%;
+    max-width: 1440px;
+}
+.row{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.row__block{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.row__block__mini{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.row__block__img{
+    height: 100%;
+    width: 100%;
+    text-align:center;
+}
+.row__block__text{
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    background-color: rgb(53,57,86,0);
+    position: absolute;
+}
+.row__block__text:hover{
+    background-color: rgb(53,57,86,0.7);
+}
+.row__block__text:hover > a{
+    opacity: 1;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+a{
+    display: block;
+    color: whitesmoke;
+    opacity: 0;
+}
+@media(max-width: 425px){
+    .container{
+        max-width: 425px;
+    }
+    .row{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .row__block{
+        width: 100%;
+
+    }
+    .row__block__mini{
+        height: 100%;
+    }
+    .main_screen{
+        font-size: 20px;
+        text-align: center;
+    }
+    .main_screen__img{
+        height: 100%;
+        width: 180%;
+        margin-left: -20%;
+    }
+    .description{
+        font-size: 28px;
+    }
+    .main_screen__text{
+        justify-content: center;
+        font-size: 45px;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="main_screen">
+            <img class="main_screen__img" src="./img/img_12.jpg" alt="Главная собаня">
+            <div class="main_screen__text">Добро <br />пожаловать!</div>
+        </div>
+        <div class="description">
+            <p>Привет! Меня зовут Мила, я начинающий web-разработчик и это мой сайт-портфолио. Если вы попали на этот сайт, значит скорее всего вы наткнулись на мое резюме. Здесь я хочу показать, что я умею на данный момент и какие проекты я делала. Скорее листайте вниз, чтобы увидеть мои работы. Хорошего дня!</p>
+        </div>
+        <div class="screen">
+            <div class="container">
+                <div class="row">
+                    <div class="row__block">
+                        <img class="row__block__img" src="./img/img_1.jpg" alt="собаня1">
+                        <div class="row__block__text">
+                            <a href="http://goreliic.beget.tech/calc/calc.py">
+                                <div class="text">Калькулятор<br /> Самая первая и самая простая работа для тренировки написания алгоритмов на python.</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row__block right">
+                        <div class="row__block__mini">
+                            <img class="row__block__img" src="./img/img_15.jpg" alt="собаня2">
+                            <div class="row__block__text">
+                                <a href="http://127.0.0.1:8888/x0/x0.py">
+                                    <div class="text">Крестики-нолики<br />Простая игра написанная на Python. Хорошая тренировка написания алгоритмов.</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__block__mini">
+                            <img class="row__block__img" src="./img/img_14.jpg" alt="Собаня3">
+                            <div class="row__block__text">
+                                <a href="http://127.0.0.1:8888/pdd/pdd.py">
+                                    <div class="text">Тест на пдд<br />Создание тестов сейчас довольно популярное направление.</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="row__block">
+                        <div class="row__block__mini">
+                            <img class="row__block__img" src="./img/img_19.jpg" alt="собаня4">
+                            <div class="row__block__text">
+                                <a href="http://127.0.0.1:8888/py-online/py-online.py">
+                                    <div class="text">Интерпретатор python онлайн<br />Здесь можно попробовать работооспособность своего кода на python.</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row__block__mini">
+                            <img class="row__block__img" src="./img/img_24.jpg" alt="собаня5">
+                            <div class="row__block__text">
+                                <a href="http://127.0.0.1:8888/simple_blog/blog.py">
+                                    <div class="text">Мини-блог<br />Небольшой блог где можно писать статьи.</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row__block right">
+                        <img class="row__block__img"src="./img/img_6.jpg" alt="собаня6">
+                        <div class="row__block__text">
+                            <a href="http://127.0.0.1:8888/zero.html">
+                                <div class="text"><br /></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
